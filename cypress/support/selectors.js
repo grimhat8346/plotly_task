@@ -7,7 +7,8 @@ const selectors = {
     productMenu: 'Product',
     visualReviews: 'Visual Reviews',
     smartOrchestration: 'Smart Orchestration',
-    greenCircle: '.border-jade-200', 
+    greenCircle: '.border-jade-200',
+    visualReviewsHeader: `[id="visual_reviews"]`
   };
   
   export default selectors;

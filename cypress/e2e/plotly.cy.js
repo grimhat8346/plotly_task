@@ -31,8 +31,9 @@ describe('Cypress.io Website Tests', () => {
 
   it('should navigate to Visual Review from Product', () => {
     cy.contains(selectors.productMenu).trigger('mouseover');
-    cy.contains(selectors.visualReviews).click();
-    cy.url().should('include', 'visual_reviews');
+    cy.contains(selectors.visualReviews)
+        .click()
+    cy.get(selectors.visualReviewsHeader).should('be.visible')
   });
 
   it('should navigate to Test Analytics under Smart Orchestration and verify green circle', () => {
